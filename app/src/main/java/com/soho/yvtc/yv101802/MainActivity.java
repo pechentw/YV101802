@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         b.putString("mydata",str);
         str = ed2.getText().toString();
         b.putString("mynumber",str);
+        it.putExtras(b);
 
         startActivity(it);
     }
