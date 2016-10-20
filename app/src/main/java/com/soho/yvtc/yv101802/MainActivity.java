@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         Intent it = new Intent(MainActivity.this, Main2Activity.class);
         String str = ed.getText().toString();
-        it.putExtra("mydata", str);
-        str = ed2.getText().toString();
-        it.putExtra("mynumber", str);
-//        Bundle b = new Bundle();
-//        b.putString("mydata",str);
+//        it.putExtra("mydata", str);
 //        str = ed2.getText().toString();
-//        b.putString("mynumber",str);
+//        it.putExtra("mynumber", str);
+        Bundle b = new Bundle();
+        b.putString("mydata",str);
+        str = ed2.getText().toString();
+        b.putString("mynumber",str);
 
         startActivity(it);
     }
